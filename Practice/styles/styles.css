@@ -1,12 +1,16 @@
-.container {
-  display: grid;
-  grid-template-rows: 100px 100px 100px;
-  grid-template-columns: 100px 200px;
-  border: 2px solid dodgerblue;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.box {
+  height: 100px;
+  width: 100px;
+  background: goldenrod;
 }
 
-.box {
-  background: gold;
-  width: 150px;
-  height: 20px;
+.box:hover {
+  transform: rotate(15deg);
+  transition: 5s;
 }
